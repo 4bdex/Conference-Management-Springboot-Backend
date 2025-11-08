@@ -1,6 +1,8 @@
 # Compiled class files
 *.class
 
+api.http
+
 # Log files
 *.log
 logs/
