@@ -1,4 +1,4 @@
-package ma.abdex.keynoteservice.DTO;
+package ma.abdex.conferenceservice.feign;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class KeynoteDTO {
-
     private Long id;
     private String firstName;
     private String lastName;
     private String email;
     private String function;
 }
+

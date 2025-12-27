@@ -37,5 +37,10 @@ public class KeynoteController {
         keynoteService.deleteKeynote(id);
         return ResponseEntity.noContent().build();
     }
+    @PutMapping("/keynotes/{id}")
+    public ResponseEntity<Keynote> updateKeynote(@PathVariable Long id, @RequestBody KeynoteDTO keynoteDTO){
+        return ResponseEntity.ok(keynoteService.updateKeynote(id, keynoteDTO));
+    }
+
 
 }
